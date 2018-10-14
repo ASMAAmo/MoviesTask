@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:background="@drawable/border_shapbooks"
+    android:layout_height="match_parent"
+
+    tools:context="movie.app.com.movies.Vediodetails">
+    <ImageView
+        android:id="@+id/img_book"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+android:layout_centerHorizontal="true"
+        android:background="@drawable/download" />
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@android:color/black"
+        android:layout_below="@+id/img_book"
+        android:layout_height="1dp" />
+    <CheckedTextView
+        android:id="@+id/txtVedioname"
+        android:layout_width="wrap_content"
+        android:text="Name"
+        android:textSize="15sp"
+        android:layout_below="@+id/img_book"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_purple"
+        android:layout_height="wrap_content" />
+    <CheckedTextView
+        android:id="@+id/txtVediooverview"
+        android:layout_width="wrap_content"
+        android:text="@string/overview"
+        android:textSize="15sp"
+        android:layout_below="@+id/txtVedioname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_purple"
+        android:layout_height="wrap_content" />
+    <CheckedTextView
+        android:id="@+id/txtoverviewdetails"
+        android:layout_width="wrap_content"
+        android:text="testteeeeeeeeeeeeeee"
+        android:textSize="13sp"
+        android:layout_below="@+id/txtVediooverview"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content" />
+    <CheckedTextView
+        android:id="@+id/txtVediodate"
+        android:layout_width="80dp"
+        android:text="@string/date"
+        android:textSize="15sp"
+        android:layout_below="@+id/txtoverviewdetails"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_purple"
+        android:layout_height="wrap_content" />
+    <CheckedTextView
+        android:id="@+id/txtoverviewdatenum"
+        android:layout_width="wrap_content"
+        android:text="testteeeeeeeeeeeeeee"
+        android:textSize="13sp"
+        android:layout_below="@+id/txtoverviewdetails"
+        android:layout_toRightOf="@+id/txtVediodate"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content" />
+    <CheckedTextView
+        android:id="@+id/txtrate"
+        android:layout_width="80dp"
+        android:text="@string/rate"
+        android:textSize="15sp"
+        android:layout_below="@+id/txtoverviewdatenum"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_purple"
+        android:layout_height="wrap_content" />
+    <com.github.lzyzsd.circleprogress.ArcProgress
+        android:id="@+id/arc_progress"
+        android:layout_toRightOf="@+id/txtrate"
+        android:layout_below="@+id/txtoverviewdatenum"
+        android:layout_marginLeft="30dp"
+        android:layout_width="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="70dp"
+        app:arc_progress="55"
+      />
+</RelativeLayout>

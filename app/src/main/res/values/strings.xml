@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="overview">Overview :</string>
+    <string name="date">Date</string>
+    <string name="rate">Rate</string>
+    <string name="nointernet">Check Internet connection</string>
+</resources>
